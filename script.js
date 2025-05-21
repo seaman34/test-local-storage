@@ -1,7 +1,7 @@
 var mission = "#ffffff";
 doNull();
 function doNull(){
-    if(localStorage.getItem('coins') != "0"){
+    if(localStorage.getItem('coins') != null){
         document.querySelector("#score").innerHTML = localStorage.getItem('coins');
         return
     }
